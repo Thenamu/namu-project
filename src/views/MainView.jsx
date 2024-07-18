@@ -6,13 +6,12 @@ import Site from "../components/Site";
 import Port from "../components/Port";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import Skip from "../components/Skip";
+// import Skip from "../components/Skip";
 import Main from "../components/Main";
 
 const MainView = () => {
     return (
         <>
-        <Skip/>
         <Header/>
         <Main>
             <Intro/>
