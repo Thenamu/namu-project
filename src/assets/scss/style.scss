@@ -1,17 +1,17 @@
-/* @charset "UTF-8";
-
+/*
 @import "setting/fonts";
 @import "setting/vars";
 @import "setting/reset";
-@import "setting/mixin";
 
-
-@import "section/header";
 @import "section/intro";
 @import "section/skill";
 @import "section/site";
 @import "section/port";
 @import "section/contact";
 @import "section/footer"; */
+
+@charset "UTF-8";
+@import "setting/mixin";
+@import "section/header";
 
 

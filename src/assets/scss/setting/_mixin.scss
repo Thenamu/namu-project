@@ -1,11 +1,4 @@
-// 가운데 정렬
-@mixin flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-    
-// 양쪽 정렬
+    // 양쪽 정렬
 @mixin flex-between {
     display: flex;
     align-items: center;
@@ -26,4 +19,32 @@
     left: 0;
     top: 0;
     width: 100%;
-}   
+}
+
+// 커스텀
+
+// 가운데 정렬
+@mixin flex-center($justify: true) {
+    display: flex;
+    align-items: center;
+    
+    @if $justify {
+        justify-content: center;
+    }
+    
+}
+
+// 헤더 고정
+@mixin header__nav--fixed {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 72;
+}
+
+// <a> underline 삭제
+@mixin text-no-underline-cursor-pointer {
+    text-decoration: none;
+    cursor: pointer;
+}
